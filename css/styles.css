@@ -68,6 +68,15 @@
     gap:1rem;
     border:5px solid hotpink;
 }
+.top-btn{
+    height:2.20rem;
+    width:4.20rem;
+    border-radius:1.20rem;
+    /* padding:1rem; */
+    background-color:rgba(0, 255, 136, 1);
+    border:none;
+    font-weight: bold;
+}
 .b-img button{
     position: absolute;
     top: 10%;
