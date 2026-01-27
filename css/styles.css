@@ -310,8 +310,36 @@ text-align: center;
     border-radius: 100px;
     box-sizing: border-box;
 }
-  
-
+.tech-wave{
+    text-align: center;
+    align-items: center;
+    border:6px solid teal;
+}
+.footer-icon a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 1);
+    
+}
+.footer-social{
+    margin:1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap:40px;
+}
+footer{
+    height:20vh;
+    background-image:url(../images/footer-bg.png);
+    padding:7.5rem;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:rgba(255, 255, 255, 1);
+    border:5px dotted darkorange;
+}
+/* all part responsive start */
 
 
 
