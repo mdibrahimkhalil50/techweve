@@ -32,8 +32,6 @@
 }
 .btn{
     align-items: center;
-    /* height: 2.75rem;
-    width:8.45rem; */
     padding:1rem;
     border-radius:2rem ;
     font-size: 1rem;
@@ -46,8 +44,6 @@
 }
 .anchor{
      align-items: center;
-    /* height: 2.75rem;
-    width:8.45rem; */
     padding:1rem;
     border-radius:2rem ;
     font-size: 1rem;
@@ -81,9 +77,9 @@
     height:2.20rem;
     width:4.20rem;
     border-radius:1.20rem;
-    /* padding:1rem; */
     background-color:rgba(0, 255, 136, 1);
     border:none;
+    font-size:1.20rem;
     font-weight: bold;
 }
 .b-img button{
@@ -116,39 +112,18 @@
 }
 
 /* upper mid part all design ------------------------------- */
+.upper-mid{
+    border:5px solid red;
+    background-color: rgba(26, 11, 46, 1);
+    padding:4rem 5rem 4rem 7rem;
+}
 .top-mid{
     text-align: center;
     align-items: center;
+    border:6px dotted teal;
+    color:aliceblue;
 }
-/* .rating-card{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:3rem;
-    box-sizing: border-box;
-    justify-content: space-evenly;
-   
-    border:4px solid greenyellow;
-padding:4rem 5rem 4rem 7rem;
-}
-.box{
-    
-    border:4px solid #FB09B4;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-.box h1{
-    color:rgba(0, 255, 136, 1);
-    font-weight:bolder;
-    font-size: 48px;
-    line-height: 0px;
-    
-}
-.box p{
-    color:white;
-    line-height: 0px;
-} */
+
 /* same work using grid area */
 .rating-card{
     display: grid;
@@ -193,18 +168,10 @@ padding:4rem 5rem 4rem 7rem;
 } 
 
 /* -------------------------------------------- */
-.upper-mid{
-    border:5px solid red;
-    background-color: rgba(26, 11, 46, 1);
-    padding:4rem 5rem 4rem 7rem;
-}
-.top-mid{
-    border:6px dotted teal;
-    color:aliceblue;
-    
-}
 
-/* middle mid part design start'' Oooh amake ferai ke, ki moja */
+
+
+/* middle mid part design start'' Ooh ki moja */
 .why-container{
     padding:3rem 6.5rem;
     border:6px dashed purple;
@@ -252,7 +219,6 @@ text-align: center;
 /* video adding  part */
 .card-container{
     display:grid;
-   
     grid-template-columns: repeat(3,1fr);
     justify-content:space-between;
     gap:1rem;
@@ -287,10 +253,12 @@ text-align: center;
 
 /* alex part start */
 .meet{
+    border-radius:1.5rem;
    margin:3rem auto;
     border:6px dotted red;
 }
 .alex-data{
+    border-radius:1.5rem;
     border:3px dashed greenyellow;
     display:flex;
     flex-direction: row;
@@ -340,6 +308,98 @@ footer{
     border:5px dotted darkorange;
 }
 /* all part responsive start */
+@media screen and (max-width:576px){
+    .list,.navbar{
+    display:flex;
+    gap:1rem;
+    flex-direction: column;
+    width: 90vw;
+}
+.banner {
+    margin: 0 auto;
+}
+.p-banner {
+   height: 70vh;
+    width:100vw;
+}
+.b-img{
+    width: 65%;
+    margin:20px 5px 0 0;
+}
+
+.b-description {
+    text-align: center;
+    width:80vw;
+}
+.upper-mid{
+width: 90vw;
+gap:0px;
+    padding:1.25rem;
+}
+.top-mid{
+    width:80vw;
+}
+.rating-card{
+    gap:0;
+    grid-template-areas: 
+    "box-1 box-2"
+    "box-3 box-4"
+}
+.why-container {
+    width:95vw;
+    padding: 3rem 0.5rem;
+    
+}
+.why-tech{
+    margin:1rem;
+    gap:1.5rem;
+    grid-template-areas:
+    "side-bar"
+    " mobil-bar"
+    "global-bar"
+    "footer-exclusive"
+    "footer-rich"
+}
+.card-container{
+    grid-template-columns: repeat(1,1fr);
+    margin-left:2vw;
+    
+}
+.card {
+    background-color: rgba(37, 13, 68, 1);
+    border-radius: 20px;
+    border: 4px solid red;
+    width: 85vw;
+    height: 450px;
+}
+.video-container{
+     padding:3rem 1rem;
+     justify-content: center;
+     width:95vw;
+}
+.alex-data {
+
+    flex-direction:column;
+   text-align: center;
+   padding:0.5rem;
+}
+.alex-media {
+   justify-content: center;
+}
+footer {
+   width:93vw; 
+    padding:1rem;
+    height:30vh;
+}
+.meet{
+    margin:1rem;
+}
+.footer-social {
+    margin: 1.5rem;
+   flex-wrap: wrap;
+}
+
+}
 
 
 
