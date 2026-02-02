@@ -6,6 +6,9 @@
   font-optical-sizing: auto;
   
 }
+.list-replace{
+    display:none;
+}
 
 .list{
     display:flex;
@@ -367,11 +370,18 @@ footer{
 }
 /* all part responsive start */
 @media screen and (max-width:576px){
-    .list,.navbar{
+    .navbar{
     display:flex;
     gap:1rem;
-    flex-direction: column;
+    flex-direction: row;
     width: 88vw;
+}
+.list,.btn-1{
+    display: none;
+}
+.list-replace{
+    display:block;
+    margin-inline-end: 0px;
 }
 
 .banner {
@@ -381,6 +391,9 @@ footer{
    height: 70vh;
     width:100vw;
 }
+.btn-text{
+    flex-direction: row;
+}
 .b-img{
     width: 65%;
     margin:20px 5px 0 0;
@@ -389,11 +402,14 @@ footer{
 .b-description {
     text-align: center;
     width:80vw;
+    
 }
 .upper-mid{
 width: 90vw;
 gap:0px;
     padding:1.25rem;
+    padding-top: 12rem;
+   
 }
 .top-mid{
     width:80vw;
